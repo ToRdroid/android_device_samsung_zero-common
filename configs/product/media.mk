@@ -25,5 +25,5 @@ PRODUCT_COPY_FILES += \
 
 # media build properties
 PRODUCT_PROPERTY_OVERRIDES += \
-	media.sf.omx-plugin=libffmpeg_omx.so \
-    persist.media.treble_omx=false
+    media.sf.omx-plugin=libffmpeg_omx.so \
+    persist.media.treble_omx=true
