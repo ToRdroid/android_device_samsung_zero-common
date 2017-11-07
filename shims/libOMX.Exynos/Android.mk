@@ -20,7 +20,15 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := \
     libOMX.Exynos.cpp
 
-LOCAL_SHARED_LIBRARIES := liblog
+LOCAL_SHARED_LIBRARIES := \
+    liblog \
+    libmedia
+
+LOCAL_C_INCLUDES := \
+    frameworks/native/include/media/openmax/ \
+	hardware/samsung_slsi-cm/exynos/include/ \
+    hardware/samsung_slsi-cm/openmax/include/ \
+    hardware/samsung_slsi-cm/openmax/osal/
 
 LOCAL_MODULE := libOMX.Exynos_shim
 LOCAL_MODULE_TAGS := optional
